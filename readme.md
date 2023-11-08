@@ -1,7 +1,9 @@
-# Index
+# Setup Python Container for Development in VS Code
+
+Index:
 - [Setup Python Container for Development](#setup-python-container-for-development)
   * [Start the container](#start-the-container)
-  * [Setup VSCode](#setup-vscode)
+  * [Setup VS Code](#setup-vs-code)
   * [Add or remove python packages by using pip](#add-or-remove-python-packages-by-using-pip)
   * [Add or remove python packages by using requirements file](#add-or-remove-python-packages-by-using-requirements-file)
 - [Useful commands:](#useful-commands-)
@@ -10,7 +12,6 @@
   * [Stop and remove Container](#stop-and-remove-container)
   * [Remove the Image](#remove-the-image)
 
-# Setup Python Container for Development
 
 ## Start the container
 1. Define the required python packages inside `/src/requirements.txt`:
@@ -34,8 +35,8 @@
 	- `src` directory is automatically mounted inside the container `/app/src`
 	- Required python packages are installed into the image from `/src/requirements.txt`
 
-## Setup VSCode
-1. Open VSCode
+## Setup VS Code
+1. Open VS Code
 
 2. Install Extensions:
 
@@ -44,7 +45,7 @@
 
 	![Remote and Dev Extensions](/docs/imgs/vscode_extensions.png)
 
-3. Open Dev Container inside VSCode:
+3. Open Dev Container inside VS Code:
 
 	![Open Dev Container](/docs/imgs/open_dev_container.png)
 
@@ -62,7 +63,7 @@
 	![Interpreter Selection 1](/docs/imgs/select_interpreter_1.png)
 	![Interpreter Selection 2](/docs/imgs/select_interpreter_2.png)
 
-7. Open `main.py` file from VSCode file explorer:
+7. Open `main.py` file from VS Code file explorer:
 
 	![Open Main](/docs/imgs/open_main_py.png)
 
@@ -70,7 +71,7 @@
 
 	![Select launch file](/docs/imgs/select_launch_file.png)
 
-9. At first start, VSCode tries to create a launch file. Create the `launch.json` file:
+9. At first start, VS Code tries to create a launch file. Create the `launch.json` file:
 
 	![Create launch.json](/docs/imgs/create_launch_json.png)
 
@@ -84,9 +85,9 @@
 
 If you want to install/remove a python package, you can use `pip` like always.
 
-1. Open a terminal inside VSCode:
+1. Open a terminal inside VS Code:
 
-	![Open VSCode Terminal](/docs/imgs/open_terminal_vscode.png)
+	![Open VS Code Terminal](/docs/imgs/open_terminal_vscode.png)
 
 2. Execute the `pip` command:
 
@@ -124,7 +125,7 @@ You also can list the needed packages directly in the `requirements.txt` and ins
 	matplotlib
 	```
 	
-2. Fire up a VSCode terminal and execute:
+2. Fire up a VS Code terminal and execute:
 
 	```bash
 	pip install -r requirements.txt
@@ -134,7 +135,7 @@ You also can list the needed packages directly in the `requirements.txt` and ins
 	- You also need to do this if other users have updated `requirements.txt` after a `git pull` and you do not want to stop the container. 
 
 # Useful commands:
-Open a terminal (outside VSCode), `cd` into the project root directory where the `compose.yml` file is located and execute one of the commands below.
+Open a terminal (outside VS Code), `cd` into the project root directory where the `compose.yml` file is located and execute one of the commands below.
 
 ## Start Container
 ```bash
