@@ -2,13 +2,14 @@
 - [Setup Python Container for Development](#setup-python-container-for-development)
   * [Start the container](#start-the-container)
   * [Setup VSCode](#setup-vscode)
-  * [Add/remove python packages by using pip](#add-remove-python-packages-by-using-pip)
-  * [Add/remove python packages by using `requirements.txt`](#add-remove-python-packages-by-using--requirementstxt-)
+  * [Add or remove python packages by using pip](#add-or-remove-python-packages-by-using-pip)
+  * [Add or remove python packages by using requirements file](#add-or-remove-python-packages-by-using-requirements-file)
 - [Useful commands:](#useful-commands-)
   * [Start Container](#start-container)
   * [Recreate and start the container in case `Dockerfile` was modified](#recreate-and-start-the-container-in-case--dockerfile--was-modified)
   * [Stop and remove Container](#stop-and-remove-container)
   * [Remove the Image](#remove-the-image)
+
 
 
 # Setup Python Container for Development
@@ -21,7 +22,7 @@
 	pandas
 	```
 	
-	(can also be updated later, see [Option 2: by using `requirements.txt`](#option-2--by-using--requirementstxt-))
+	(can also be updated later, see [here](#add-or-remove-python-packages-by-using-requirements-file))
 
 2. Open Terminal inside the current directory
 
