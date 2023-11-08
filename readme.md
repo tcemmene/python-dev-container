@@ -2,15 +2,13 @@
 - [Setup Python Container for Development](#setup-python-container-for-development)
   * [Start the container](#start-the-container)
   * [Setup VSCode](#setup-vscode)
-  * [Add/remove python packages](#add-remove-python-packages)
-    + [Option 1: by using pip](#option-1--by-using-pip)
-    + [Option 2: by using `requirements.txt`](#option-2--by-using--requirementstxt-)
+  * [Add/remove python packages by using pip](#add-remove-python-packages-by-using-pip)
+  * [Add/remove python packages by using `requirements.txt`](#add-remove-python-packages-by-using--requirementstxt-)
 - [Useful commands:](#useful-commands-)
   * [Start Container](#start-container)
   * [Recreate and start the container in case `Dockerfile` was modified](#recreate-and-start-the-container-in-case--dockerfile--was-modified)
   * [Stop and remove Container](#stop-and-remove-container)
   * [Remove the Image](#remove-the-image)
-
 
 
 # Setup Python Container for Development
@@ -83,9 +81,8 @@
 
 11. Hit again `F1` to start the `main.py` script. Finished.
 
-## Add/remove python packages
+## Add/remove python packages by using pip
 
-### Option 1: by using pip
 If you want to install/remove a python package, you can use `pip` like always.
 
 1. Open a terminal inside VSCode:
@@ -117,7 +114,7 @@ If you want to install/remove a python package, you can use `pip` like always.
 	- Keep this file in the repo (do NOT list it in `.gitignore`) so that other users have the newest packages listed.
 	- When other git users have updated `requirements.txt`, you need to install the new packages, follow step 5 below.
 
-### Option 2: by using `requirements.txt`
+## Add/remove python packages by using `requirements.txt`
 You also can list the needed packages directly in the `requirements.txt` and install them inside an existing container without container restart.
 
 1. Update `requirements.txt` with the new package on a new line, in this case `matplotlib`. Save the file.
