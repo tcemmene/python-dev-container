@@ -134,7 +134,7 @@ You also can list the needed packages directly in the `requirements.txt` and ins
 	- You also need to do this if other users have updated `requirements.txt` after a `git pull` and you do not want to stop the container. 
 
 # Useful commands:
-Open terminal outside VSCode, `cd` into the root directory for following commands:
+Open a terminal (outside VSCode), `cd` into the project root directory where the `compose.yml` file is located and execute one of the commands below.
 
 ## Start Container
 ```bash
