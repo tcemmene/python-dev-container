@@ -1,5 +1,18 @@
-### Setup Python Container for Development
-# Start the container
+# Index
+- [Setup Python Container for Development](#setup-python-container-for-development)
+  * [Start the container](#start-the-container)
+  * [Setup VSCode](#setup-vscode)
+  * [Add/remove python packages](#add-remove-python-packages)
+    + [Option 1: by using pip](#option-1--by-using-pip)
+    + [Option 2: by using `requirements.txt`](#option-2--by-using--requirementstxt-)
+- [Useful commands:](#useful-commands-)
+  * [Start Container](#start-container)
+  * [Recreate and start the container in case `Dockerfile` was modified.](#recreate-and-start-the-container-in-case--dockerfile--was-modified)
+  * [Stop and remove Container](#stop-and-remove-container)
+  * [Remove the Image](#remove-the-image)
+
+# Setup Python Container for Development
+## Start the container
 1. Define the required python packages inside `/src/requirements.txt`:
 ```
 numpy
@@ -15,7 +28,7 @@ Hint:
 - `src` directory is automatically mounted inside the container `/app/src`
 - Required python packages are installed into the image from `/src/requirements.txt`
 
-# Setup VSCode
+## Setup VSCode
 1. Open VSCode
 2. Install Extensions:
 - Remote Extensions
@@ -41,8 +54,8 @@ Hint:
 ![Modify launch.json](/docs/imgs/modify_launch_json.png)
 11. Hit again `F1` to start the `main.py` script. Finished.
 
-# Add/remove python packages
-## Option 1: by using pip
+## Add/remove python packages
+### Option 1: by using pip
 If you want to install/remove a python package, you can use `pip` like always.
 1. Open a terminal inside VSCode:
 ![Open VSCode Terminal](/docs/imgs/open_terminal_vscode.png)
@@ -62,7 +75,7 @@ Hint:
 Hint if using git: 
 - Keep this file in the repo (do NOT list it in `.gitignore`) so that other users have the newest packages listed.
 - When other git users have updated `requirements.txt`, you need to install the new packages, follow step 5 below.
-## Option 2: by using `requirements.txt`
+### Option 2: by using `requirements.txt`
 You also can list the needed packages directly in the `requirements.txt` and install them inside an existing container without container restart. Fire up a VSCode terminal and execute:
 ```bash
 pip install -r requirements.txt
