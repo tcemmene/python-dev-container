@@ -143,7 +143,9 @@ Open terminal outside VSCode, `cd` into the root directory for following command
 docker compose up -d
 ```
 
-## Recreate and start the container in case `Dockerfile` was modified
+## Recreate and start the container
+This is needed in case `Dockerfile` was modified:
+
 ```bash
 docker compose up -d --build
 ```
