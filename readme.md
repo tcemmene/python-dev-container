@@ -1,12 +1,12 @@
 # Setup Python Container for Development in VS Code
 
 Index:
-- [Setup Python Container for Development](#setup-python-container-for-development)
+- [Setup Python Container for Development in VS Code](#setup-python-container-for-development-in-vs-code)
   * [Start the container](#start-the-container)
   * [Setup VS Code](#setup-vs-code)
   * [Add or remove python packages by using pip](#add-or-remove-python-packages-by-using-pip)
   * [Add or remove python packages by using requirements file](#add-or-remove-python-packages-by-using-requirements-file)
-- [Useful commands:](#useful-commands-)
+- [Useful commands](#useful-commands)
   * [Start Container](#start-container)
   * [Recreate and start the container](#recreate-and-start-the-container)
   * [Stop and remove Container](#stop-and-remove-container)
@@ -134,7 +134,7 @@ You also can list the needed packages directly in the `requirements.txt` and ins
 	Hint if using git:
 	- You also need to do this if other users have updated `requirements.txt` after a `git pull` and you do not want to stop the container. 
 
-# Useful commands:
+# Useful commands
 Open a terminal (outside VS Code), `cd` into the project root directory where the `compose.yml` file is located and execute one of the commands below.
 
 ## Start Container
