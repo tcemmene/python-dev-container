@@ -12,6 +12,7 @@
   * [Remove the Image](#remove-the-image)
 
 
+
 # Setup Python Container for Development
 
 ## Start the container
@@ -111,6 +112,7 @@ If you want to install/remove a python package, you can use `pip` like always.
 	![Update Requirements](/docs/imgs/update_requirements.png)
 
 4. The updated packages are now listed in `requirements.txt` and will be installed when recreating the container. 
+
 	Hint if using git: 
 	- Keep this file in the repo (do NOT list it in `.gitignore`) so that other users have the newest packages listed.
 	- When other git users have updated `requirements.txt`, you need to install the new packages, follow step 5 below.
