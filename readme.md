@@ -97,7 +97,7 @@ If you want to install/remove a python package, you can use `pip` like always.
 	
 	![Pip Install Package](/docs/imgs/pip_install.png)
 	
-3. For keeping the `requirements.txt` updated, execute now following command in the terminal:
+3. For keeping the `requirements.txt` updated after installing a package using `pip`, execute now following command in the terminal to freeze the requirements:
 
 	```bash
 	pip freeze > requirements.txt
@@ -106,7 +106,7 @@ If you want to install/remove a python package, you can use `pip` like always.
 	(ensure you are still in the `/src/` directory for this)
 	
 	Hint:
-	- You also need to do always this BEFORE the container is stopped, otherwise the installed packages need to be installed again.
+	- You also need to freeze the requirements BEFORE the container is stopped, otherwise the installed packages need to be installed again.
 
 	![Update Requirements](/docs/imgs/update_requirements.png)
 
