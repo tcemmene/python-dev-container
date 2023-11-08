@@ -106,7 +106,7 @@ If you want to install/remove a python package, you can use `pip` like always.
 	(ensure you are still in the `/app/src/` directory for this)
 	
 	Hint:
-	- You also need to freeze the requirements BEFORE the container is stopped, otherwise the installed packages need to be installed again.
+	- You need to freeze the requirements BEFORE the container is stopped, otherwise the installed packages need to be installed again.
 
 	![Update Requirements](/docs/imgs/update_requirements.png)
 
