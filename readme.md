@@ -103,6 +103,8 @@ If you want to install/remove a python package, you can use `pip` like always.
 	pip freeze > requirements.txt
 	```
 	
+	(ensure you are still in the `/src/` directory for this)
+	
 	Hint:
 	- You also need to do always this BEFORE the container is stopped, otherwise the installed packages need to be installed again.
 
