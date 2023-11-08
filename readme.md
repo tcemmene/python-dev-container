@@ -6,11 +6,9 @@
   * [Add or remove python packages by using requirements file](#add-or-remove-python-packages-by-using-requirements-file)
 - [Useful commands:](#useful-commands-)
   * [Start Container](#start-container)
-  * [Recreate and start the container in case `Dockerfile` was modified](#recreate-and-start-the-container-in-case--dockerfile--was-modified)
+  * [Recreate and start the container](#recreate-and-start-the-container)
   * [Stop and remove Container](#stop-and-remove-container)
   * [Remove the Image](#remove-the-image)
-
-
 
 # Setup Python Container for Development
 
