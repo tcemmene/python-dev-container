@@ -32,7 +32,7 @@ Index:
 	```	
 
 	Hint:
-	- `src` directory is automatically mounted inside the container `/app/src`
+	- `src` directory is automatically mounted inside the container `/app/src/`
 	- Required python packages are installed into the image from `/src/requirements.txt`
 
 ## Setup VS Code
@@ -49,7 +49,7 @@ Index:
 
 	![Open Dev Container](/docs/imgs/open_dev_container.png)
 
-4. Open the working directory by hitting `F1` and type `Open Folder`, then select `/app/src`:
+4. Open the working directory by hitting `F1` and type `Open Folder`, then select `/app/src/`:
 
 	![Open Folder 1](/docs/imgs/open_folder_1.png)
 	![Open Folder 2](/docs/imgs/open_folder_2.png)
