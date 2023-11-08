@@ -67,7 +67,7 @@ Index:
 
 	![Open Main](/docs/imgs/open_main_py.png)
 
-8. Press F5 to try start the script and select `Python File`:
+8. Press `F5` to try start the script and select `Python File`:
 
 	![Select launch file](/docs/imgs/select_launch_file.png)
 
@@ -79,7 +79,7 @@ Index:
 
 	![Modify launch.json](/docs/imgs/modify_launch_json.png)
 
-11. Hit again `F1` to start the `main.py` script. Finished.
+11. Hit again `F5` to start the `main.py` script. Finished.
 
 ## Add or remove python packages by using pip
 
