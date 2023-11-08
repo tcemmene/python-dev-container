@@ -63,7 +63,7 @@ Hint:
 
 7. Open `main.py` file from VSCode file explorer:
 
-![Open Main](/docs/imgs/open_main.png)
+![Open Main](/docs/imgs/open_main_py.png)
 
 8. Press F5 to try start the script and select `Python File`:
 
