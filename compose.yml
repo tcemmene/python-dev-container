@@ -1,0 +1,8 @@
+version: "3"
+services:
+    dev:
+        build:
+            context: .
+        container_name: python-dev
+        volumes: 
+        - "./src:/app/src"
