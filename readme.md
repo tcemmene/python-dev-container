@@ -110,7 +110,7 @@ If you want to install/remove a python package, you can use `pip` like always.
 
 	![Update Requirements](/docs/imgs/update_requirements.png)
 
-4. The updated packages are now listed in `requirements.txt` and will be installed when recreating the container. 
+4. The updated packages are now listed in `requirements.txt` and will be installed when recreating the container (because this install layer is not cached in `Dockerfile`). 
 
 	Hint if using git: 
 	- Keep this file in the repo (do NOT list it in `.gitignore`) so that other users have the newest packages listed.
