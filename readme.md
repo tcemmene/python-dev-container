@@ -16,15 +16,18 @@
 
 ## Start the container
 1. Define the required python packages inside `/src/requirements.txt`:
+
 	```
 	numpy
 	pandas
 	```
-	(can also be updated later, see chapter below)
+	
+	(can also be updated later, see [Option 2: by using `requirements.txt`](#option-2--by-using--requirementstxt-))
 
 2. Open Terminal inside the current directory
 
 3. Fire up container with compose file:
+
 	```bash
 	docker compose up -d
 	```	
@@ -89,19 +92,23 @@ If you want to install/remove a python package, you can use `pip` like always.
 	![Open VSCode Terminal](/docs/imgs/open_terminal_vscode.png)
 
 2. Execute the `pip` command:
+
 	```bash
 	pip install matplotlib
 	```
+	
 	![Pip Install Package](/docs/imgs/pip_install.png)
-3. For keeping the `requirements.txt` updated, execute now following command in the terminal (1):
+	
+3. For keeping the `requirements.txt` updated, execute now following command in the terminal:
+
 	```bash
 	pip freeze > requirements.txt
 	```
+	
+	Hint:
+	- You also need to do always this BEFORE the container is stopped, otherwise the installed packages need to be installed again.
 
 	![Update Requirements](/docs/imgs/update_requirements.png)
-
-	Hint:
-	- You also need to do always this before the container is stopped, otherwise the installed packages need to be installed again.
 
 4. The updated packages are now listed in `requirements.txt` and will be installed when recreating the container. 
 	Hint if using git: 
@@ -110,16 +117,21 @@ If you want to install/remove a python package, you can use `pip` like always.
 
 ### Option 2: by using `requirements.txt`
 You also can list the needed packages directly in the `requirements.txt` and install them inside an existing container without container restart.
+
 1. Update `requirements.txt` with the new package on a new line, in this case `matplotlib`. Save the file.
+
 	```txt [requirements.txt]
 	numpy
 	pandas
 	matplotlib
 	```
+	
 2. Fire up a VSCode terminal and execute:
+
 	```bash
 	pip install -r requirements.txt
 	```
+	
 	Hint if using git:
 	- You also need to do this if other users have updated `requirements.txt` after a `git pull` and you do not want to stop the container. 
 
