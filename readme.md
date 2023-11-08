@@ -81,7 +81,7 @@
 
 11. Hit again `F1` to start the `main.py` script. Finished.
 
-## Add/remove python packages by using pip
+## Add or remove python packages by using pip
 
 If you want to install/remove a python package, you can use `pip` like always.
 
@@ -114,7 +114,7 @@ If you want to install/remove a python package, you can use `pip` like always.
 	- Keep this file in the repo (do NOT list it in `.gitignore`) so that other users have the newest packages listed.
 	- When other git users have updated `requirements.txt`, you need to install the new packages, follow step 5 below.
 
-## Add/remove python packages by using `requirements.txt`
+## Add or remove python packages by using requirements file
 You also can list the needed packages directly in the `requirements.txt` and install them inside an existing container without container restart.
 
 1. Update `requirements.txt` with the new package on a new line, in this case `matplotlib`. Save the file.
