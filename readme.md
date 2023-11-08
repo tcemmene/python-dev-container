@@ -89,7 +89,7 @@ If you want to install/remove a python package, you can use `pip` like always.
 
 	![Open VS Code Terminal](/docs/imgs/open_terminal_vscode.png)
 
-2. Execute the `pip` command:
+2. Execute the `pip` command, in this case we want to install `matplotlib`:
 
 	```bash
 	pip install matplotlib
