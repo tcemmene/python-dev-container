@@ -114,7 +114,7 @@ If you want to install/remove a python package, you can use `pip` like always.
 
 	Hint if using git: 
 	- Keep this file in the repo (do NOT list it in `.gitignore`) so that other users have the newest packages listed.
-	- When other git users have updated `requirements.txt`, you need to install the new packages, follow step 5 below.
+	- When other git users have updated `requirements.txt`, you need to install the new packages by `pip install -r requirements.txt` (see below).
 
 ## Add or remove python packages by using requirements file
 You also can list the needed packages directly in the `requirements.txt` and install them inside an existing container without container restart.
