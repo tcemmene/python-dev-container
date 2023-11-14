@@ -7,10 +7,10 @@ Index:
   * [Add or remove python packages by using pip](#add-or-remove-python-packages-by-using-pip)
   * [Add or remove python packages by using requirements file](#add-or-remove-python-packages-by-using-requirements-file)
 - [Useful commands](#useful-commands)
-  * [Start Container](#start-container)
+  * [Start container](#start-container)
   * [Recreate and start the container](#recreate-and-start-the-container)
-  * [Stop and remove Container](#stop-and-remove-container)
-  * [Remove the Image](#remove-the-image)
+  * [Stop and remove container](#stop-and-remove-container)
+  * [Remove the image](#remove-the-image)
 
 
 ## Start the container
@@ -139,7 +139,7 @@ You also can list the needed packages directly in the `requirements.txt` and ins
 # Useful commands
 Open a terminal (outside VS Code), `cd` into the project root directory where the `compose.yml` file is located and execute one of the commands below.
 
-## Start Container
+## Start container
 ```bash
 docker compose up -d
 ```
@@ -151,12 +151,12 @@ This is needed in case `Dockerfile` was modified:
 docker compose up -d --build
 ```
 
-## Stop and remove Container
+## Stop and remove container
 ```bash
 docker compose down
 ```
 
-## Remove the Image
+## Remove the image
 1. Stop the container (using `docker compose down`).
 
 2. Find the image:
