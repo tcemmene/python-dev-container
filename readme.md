@@ -14,7 +14,7 @@ Index:
 
 
 ## Start the container
-1. Define the required python packages inside `/src/requirements.txt`:
+1. Define required python packages inside `/src/requirements.txt`:
 
 	```
 	numpy
@@ -23,7 +23,7 @@ Index:
 	
 	(can also be updated later, see [here](#add-or-remove-python-packages-by-using-requirements-file))
 
-2. Open Terminal inside the current directory
+2. Open Terminal inside the current directory.
 
 3. Fire up container with compose file:
 
@@ -45,11 +45,11 @@ Index:
 
 	![Remote and Dev Extensions](/docs/imgs/vscode_extensions.png)
 
-3. Open Dev Container inside VS Code:
+3. Open VS Code in dev container:
 
 	![Open Dev Container](/docs/imgs/open_dev_container.png)
 
-4. Open the working directory by hitting `F1` and type `Open Folder`, then select `/app/src/`:
+4. Open the working directory: press `F1` and type `Open Folder`, then select `/app/src/`:
 
 	![Open Folder 1](/docs/imgs/open_folder_1.png)
 	![Open Folder 2](/docs/imgs/open_folder_2.png)
@@ -58,7 +58,7 @@ Index:
 
 	![Python Extension](/docs/imgs/python_extension.png)
 
-6. Select Interpreter, press `F1` and type `Select Interpreter`, then select the main python interpreter:
+6. Select Interpreter: press `F1` and type `Select Interpreter`, then select the main python interpreter:
 
 	![Interpreter Selection 1](/docs/imgs/select_interpreter_1.png)
 	![Interpreter Selection 2](/docs/imgs/select_interpreter_2.png)
@@ -67,11 +67,11 @@ Index:
 
 	![Open Main](/docs/imgs/open_main_py.png)
 
-8. Press `F5` to try start the script and select `Python File`:
+8. Start the script: Press `F5` to try start the script and select `Python File`:
 
 	![Select launch file](/docs/imgs/select_launch_file.png)
 
-9. At first start, VS Code tries to create a launch file. Create the `launch.json` file:
+9. Create the `launch.json` file: At first start, VS Code tries to create a launch file. Create it:
 
 	![Create launch.json](/docs/imgs/create_launch_json.png)
 
@@ -79,7 +79,7 @@ Index:
 
 	![Modify launch.json](/docs/imgs/modify_launch_json.png)
 
-11. Hit again `F5` to start the `main.py` script. Finished.
+11. Press again `F5` to start the `main.py` script. Finished.
 
 ## Add or remove python packages by using pip
 
