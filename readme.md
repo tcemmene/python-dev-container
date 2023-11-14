@@ -40,7 +40,7 @@ Index:
 
 2. Install Extensions:
 
-	- Remote Extensions
+	- Remote Development
 	- Dev Container
 
 	![Remote and Dev Extensions](/docs/imgs/vscode_extensions.png)
